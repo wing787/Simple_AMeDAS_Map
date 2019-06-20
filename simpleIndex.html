@@ -170,7 +170,7 @@
     {
       onEachFeature: function(feature, layer){
         if(feature.properties && feature.properties.AMeDAS_name){
-          layer.bindPopup('<b>アメダス観測地点</b>' + '</br>' + '地点名_' + feature.properties.AMeDAS_name + '</br>' + '所在地_' + feature.properties.Location + '</br>' + '観測標高_' + feature.properties.Altitude + '.0[m]');
+          layer.bindPopup('<b>アメダス観測地点</b>' + '</br>' + '地点名：' + feature.properties.AMeDAS_name + '</br>' + '所在地：' + feature.properties.Location + '</br>' + '観測標高：' + feature.properties.Altitude + '.0[m]');
         }
       }
     }).addTo(map);
